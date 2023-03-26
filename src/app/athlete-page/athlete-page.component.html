@@ -1,8 +1,0 @@
-<div class="container">
-  <h1>{{ athlete.name + "'s rekorder"}}</h1>
-  <div *ngFor="let record of athlete.records" class="record">
-    <div class="name">{{ getDisciplineName(record.discipline) }}</div>
-    <div class="time">{{ record.time }}</div>
-    <div class="year">{{ record.yearOfRecord }}</div>
-  </div>
-</div>
