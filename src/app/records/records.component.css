@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:1rem;
+}
+
+a {
+  color: black;
+}
+
+td a {
+  display: block;
+  width: 100%;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin:0;
+  padding: 0;
+}
+
+.discipline-header {
+  color: white;
+  background-color: black;
+  margin: 0;
+  width:fit-content;
+  padding: .5rem 1rem 0 1rem;
+  border-radius: 1.5rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+table {
+  min-width: 30rem;
+  text-align: left;
+  padding:0;
+  margin-bottom: 2rem;
+  border:1px solid black;
+}
+
+th {
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: .2rem;
+  font-size: .9rem;
+}
+
+tr {
+  padding: 2rem;
+}
+
+tr:hover, tr:nth-child(even):hover {
+  background-color: lightgray;
+}
+
+tr:nth-child(even) {
+  background-color: azure;
+}
+
+td {
+  font-size: 1rem;
+}
+
+td.pos {
+  width:5%;
+}
+
+td.name {
+  width:60%;
+}
+
+td.time {
+  width: 15%;
+}
+
+.year {
+  width:10%;
+  text-align: center;
+}

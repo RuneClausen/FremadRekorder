@@ -1,0 +1,27 @@
+<div class="container">
+  <div *ngFor="let discipline of disciplines">
+    <div *ngIf="retrieveRecords(discipline.id).length > 0">
+      <div class="sub-container">
+        <div class="discipline-header">{{ discipline.name }}</div>
+        <table [cellSpacing]="0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Navn</th>
+              <th>Tid</th>
+              <th class="year">Årstal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let r of retrieveRecords(discipline.id); let i = index">
+              <td class="pos">{{ i+1 }}</td>
+              <td class="name"><a routerLink="/athlete/{{ r.athlete}}" class="nameSpan">{{ r.athlete }}</a></td>
+              <td class="time">{{ r.time }}</td>
+              <td class="year">{{ r.yearOfRecord }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
